@@ -5,10 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>New Project</h1>
-  <h1>Zero</h1>
+
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <h1 class="visually-hidden">Фитнес-центр SUPERGYM</h1>
+
+  <header class="page-header">
+
+    <h2 class="visually-hidden">Шапка сайта</h2>
+
+    <div class="container">
+
+      <div class="page-header__wrap">
+        <a class="page-header__logo">supergym</a>
+        <a class="page-header__phone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+      </div>
+
+      <div class="page-header__container">
+        <p class="page-header__description">Омск</p>
+        <div class="page-header__wrapper">
+          <h3 class="page-header__title">Фитнес центр</h3>
+          <nav class="page-header__navigation">
+            <a>Тренажёрный зал</a>
+            <a>Групповые занятия</a>
+            <a>Кардио-зона</a>
+          </nav>
+        </div>
+        <a class="page-header__buy" href="#abonements">Купить абонемент</a>
+      </div>
+
+      <ul class="page-header__links">
+        <li>
+          <a>fb</a>
+        </li>
+        <li>
+          <a>vk</a>
+        </li>
+        <li>
+          <a>ig</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </header>
+
+  <main class="page-main">
+
+  <section class="gym">
+
+    <div class="container">
+
+      <h3>Тренажёрный зал</h3>
+
+      <p>Просторный зал площадью 900 кв/м</p>
+
+      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+      <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p></div>
+
+  </section>
+
+  <section class="abonements">
+
+    <a name="abonements"></a>
+
+    <div class="container">
+
+      <h3 class="abonements__title">Абонементы</h3>
+
+      <div class="abonements__slider">
+        <input type="range" min="0" max="12" step="6" list="tickmarks">
+        <datalist id="tickmarks">
+          <option value="0" label="1 месяц">
+          <option value="6" label="6 месяцев">
+          <option value="12" label="12 месяцев">
+        </datalist>
+      </div>
+
+      <div class="abonements__variations">
+        <div class="abonements__item">
+          <h3>С тренером</h3>
+          <p>12 занятий</p>
+          <p>5000 р</p>
+          <a>Купить абонемент</a>
+        </div>
+        <div class="abonements__item">
+          <h3>Дневной</h3>
+          <p>с 8:00 до 17:00</p>
+          <p>1700 р</p>
+          <a>Купить абонемент</a>
+        </div>
+        <div class="abonements__item">
+          <h3>Полный день</h3>
+          <p>с 8:00 до 22:00</p>
+          <p>2700 р</p>
+          <a>Купить абонемент</a>
+        </div>
+    </div>
+
+  </section>
+
+  <section class="for-you">
+
+    <div class="container">
+
+      <article class="free-class">
+      <form>
+        <input type="text" placeholder="Имя" required>
+        <input type="tel" placeholder="Телефон" pattern="+7\([0-9]{3}\)[0-9]{7}" required>
+        <button type="submit">Отправить</button>
+      </form>
+    </article>
+    <article class="contacts"></article></div>
+
+  </section>
+
+  </main>
+
+  <footer class="page-footer">
+
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">supergym</a>
+        <nav class="page-footer__navigation">
+          <a class="page-footer__link">Услуги</a>
+          <a class="page-footer__link">Абонементы</a>
+          <a class="page-footer__link">Акции</a>
+          <a class="page-footer__link">Тренеры</a>
+          <a class="page-footer__link">Расписание</a>
+        </nav>
+        <ul class="page-footer__social">
+          <li>
+            <a class="page-footer__link" href="vk.com">
+              <svg class="page-footer__link-vk" width="24" height="13" aria-hidden="true" role="img">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="page-footer__link" href="instagram.com">
+              <svg class="page-footer__link-ig" width="24" height="24" aria-hidden="true" role="img">
+                <use xlink:href="#icon-ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="page-footer__link" href="fb.com">
+              <svg class="page-footer__link-fb" width="12" height="24" aria-hidden="true" role="img">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
 </body>
 </html>

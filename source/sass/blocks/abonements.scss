@@ -1,0 +1,17 @@
+.abonements {
+  background-color: #F8F9FC;
+  color: #102654;
+};
+
+.abonements__variations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+};
+
+.abonements__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

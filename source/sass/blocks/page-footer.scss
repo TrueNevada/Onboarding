@@ -1,0 +1,41 @@
+.page-footer {
+  background-color: #030A1A;
+};
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+};
+
+.page-footer__logo {
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+};
+
+.page-footer__navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 431px;
+
+  font-size: 14px;
+  line-height: 16px;
+};
+
+.page-footer__social {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 110px;
+  padding: 0;
+};
