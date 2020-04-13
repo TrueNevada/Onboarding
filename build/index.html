@@ -35,29 +35,30 @@
       </div>
 
       <div class="page-header__container">
-        <p class="page-header__description">Омск</p>
         <div class="page-header__wrapper">
+          <p class="page-header__description">Омск</p>
           <h3 class="page-header__title">Фитнес центр</h3>
           <nav class="page-header__navigation">
             <a>Тренажёрный зал</a>
             <a>Групповые занятия</a>
             <a>Кардио-зона</a>
           </nav>
+          <div class="page-header__buy">
+            <a class="page-header__button" href="#abonements">Купить абонемент</a>
+          </div>
         </div>
-        <a class="page-header__buy" href="#abonements">Купить абонемент</a>
+        <ul class="page-header__links">
+          <li>
+            <a>fb</a>
+          </li>
+          <li>
+            <a>vk</a>
+          </li>
+          <li>
+            <a>ig</a>
+          </li>
+        </ul>
       </div>
-
-      <ul class="page-header__links">
-        <li>
-          <a>fb</a>
-        </li>
-        <li>
-          <a>vk</a>
-        </li>
-        <li>
-          <a>ig</a>
-        </li>
-      </ul>
 
     </div>
 
@@ -71,12 +72,16 @@
 
       <div class="container">
 
-        <h3>Тренажёрный зал</h3>
+        <div class="gym__wrapper">
 
-        <p>Просторный зал площадью 900 кв/м</p>
+          <h3 class="gym__title">Тренажёрный зал</h3>
 
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p></div>
+          <p class="gym__text">Просторный зал площадью 900 кв/м</p>
+
+          <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p class="gym__description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p></div>
+
+      </div>
 
     </section>
 
@@ -125,6 +130,75 @@
       <h3>Super games</h3>
       <p>Ежегодные соревнования по CrossFit</p>
       <a>Заполнить заявку</a>
+    </section>
+
+    <section class="trainers">
+
+      <div class="container">
+        <div class="trainers__slider slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <div class="slider__element" style="height: 250px; background: violet;">3</div>
+              <div class="slider__element" style="height: 250px; background: green;">2</div>
+              <div class="slider__element" style="height: 250px; background: orange;">1</div>
+              <div class="slider__element" style="height: 250px; background: green;">2</div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__element" style="height: 250px; background: green;">2</div>
+              <div class="slider__element" style="height: 250px; background: violet;">3</div>
+              <div class="slider__element" style="height: 250px; background: green;">2</div>
+              <div class="slider__element" style="height: 250px; background: violet;">3</div>
+            </div>
+          </div>
+          <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="advantages">
+
+      <div class="container">
+
+        <h3 class="advantages__title">Наши преимущества</h3>
+
+        <ul class="advantages__list">
+          <li>
+            <div>
+              <div>
+                <h4>Площадь</h4>
+                <p>Занимайтесь без очередей и толпучки</p>
+              </div>
+              <div>
+                <h4>Комфорт</h4>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <p>Современные тренажеры на все группы мышц</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div>
+                <h4>Собственная парковка</h4>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+              <div>
+                <h4>Тренерский опыт</h4>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
     </section>
 
     <section class="offers">
@@ -251,6 +325,8 @@
     </div>
 
   </footer>
+
+  <script src="js/slider.js"></script>
 
 </body>
 </html>

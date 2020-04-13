@@ -3,6 +3,17 @@
   color: #102654;
 };
 
+.abonements__title {
+  margin: 0;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .abonements__variations {
   display: flex;
   flex-direction: row;

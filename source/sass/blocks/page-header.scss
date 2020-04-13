@@ -5,14 +5,14 @@
   background-size: cover;
 
   padding: 30px 0 50px 0;
-};
+}
 
 .page-header__wrap {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-};
+}
 
 .page-header__logo {
   font-family: "BebasNeue", "Arial", sans-serif;
@@ -20,7 +20,7 @@
   line-height: 26px;
   font-weight: 400;
   letter-spacing: 0.02em;
-};
+}
 
 .page-header__phone {
   font-family: "BebasNeue", "Arial", sans-serif;
@@ -29,13 +29,14 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #ffffff;
-};
+}
 
 .page-header__container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-};
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 
 .page-header__description {
   font-family: "BebasNeue", "Arial", sans-serif;
@@ -44,17 +45,18 @@
   font-weight: 400;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: right;
   color: #ffffff;
-};
+}
 
 .page-header__wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-};
+  flex-direction: column;
+  align-items: flex-end;
+  width: 298px;
+}
 
 .page-header__title {
-  width: 500px;
   margin: 0;
 
   font-family: "BebasNeue", "Arial", sans-serif;
@@ -65,8 +67,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  order: 2;
-};
+}
 
 .page-header__navigation {
   display: flex;
@@ -75,11 +76,13 @@
   font-size: 14px;
   line-height: 150%;
   text-align: right;
-
-  order: 1;
-};
+}
 
 .page-header__buy {
+  width: 230px;
+}
+
+.page-header__button {
   padding: 18px 53px 17px 53px;
 
   font-size: 12px;
@@ -87,10 +90,13 @@
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   border: 4px solid #ffffff;
 };
 
 .page-header__links {
   list-style: none;
+  padding: 0;
+  margin: 0;
 };
