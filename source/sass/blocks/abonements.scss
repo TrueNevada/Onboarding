@@ -1,10 +1,29 @@
 .abonements {
+  position: relative;
+
+  padding: 120px 0 120px 0;
   background-color: #F8F9FC;
   color: #102654;
-};
+  z-index: -1;
+}
+
+.abonements::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+
+  width: 287px;
+  height: 494px;
+  background-image: url("../img/weights.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 287px 494px;
+}
 
 .abonements__title {
-  margin: 0;
+  margin: 0 0 53px 0;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -14,15 +33,91 @@
   text-align: center;
 }
 
+.abonements__slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+.abonements__tickmarks {
+  display: flex;
+  flex-direction: row;
+}
+
 .abonements__variations {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-};
+}
 
 .abonements__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 64px 77px 67px;
+
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.abonements__item-title {
+  margin: 0 0 10px 0;
+
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #102654;
+}
+
+.abonements__item-time {
+  margin: 0 0 65px 0;
+
+  font-size: 16px;
+  line-height: 150%;
+  color: #495A7D;
+}
+
+.abonements__item-price {
+  position: relative;
+
+  margin: 0 0 35px 0;
+  padding-left: 5px;
+
+  font-size: 60px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #103aae;
+  z-index: 2;
+}
+
+.abonements__item-currency {
+  font-weight: 400;
+  color: #102654;
+}
+
+.abonements__item-shadow {
+  position: absolute;
+  bottom: -5px;
+  left: -15px;
+
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.42;
+  z-index: -1;
+}
+
+.abonements__item-button {
+  padding: 23px 43px;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  border: 2px solid #102654;
 }

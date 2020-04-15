@@ -7,10 +7,20 @@
   color: #102654;
 }
 
+.contacts__title {
+  margin: 0;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
 .contacts__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

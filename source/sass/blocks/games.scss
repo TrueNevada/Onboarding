@@ -1,3 +1,108 @@
 .games {
+  padding: 120px 0;
+}
+
+.games__wrapper {
+  position: relative;
+
+  padding: 83px 0 108px 78px;
   background-color: #ED0233;
+}
+
+.games__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 660px;
+  height: 500px;
+  background-image: url("../img/splash.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 660px 500px;
+}
+
+.games__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 343px;
+  margin-bottom: 8px;
+}
+
+.games__title {
+  width: 201px;
+  margin: 0;
+  padding-top: 2px;
+
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.games__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 150%;
+
+  border-bottom: 1px solid #ffffff;
+}
+
+.games__info--top {
+  border: none;
+}
+
+.games__info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 64px;
+  margin-bottom: 15px;
+
+  border-top: 1px solid #ffffff;
+}
+
+.games__time {
+  margin: 0;
+
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+}
+
+.games__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.games__description {
+  margin: 0 0 70px;
+
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.games__request {
+  padding: 25px 110px 22px 111px;
+  border: 4px solid #ffffff;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
 }

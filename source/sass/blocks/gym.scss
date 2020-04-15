@@ -1,17 +1,47 @@
 .gym {
-  padding: 170px 0 0 0;
+  padding: 165px 0 265px 0;
   color: #102654;
 }
 
 .gym__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 355px;
+  padding-left: 60px;
+}
+
+.gym__wrapper::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -45px;
+
+  width: 660px;
+  height: 401px;
+  background-image: url("../img/gym.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 660px 401px;
+}
+
+.gym__wrapper::after {
+  content: "";
+  position: absolute;
+  right: 31%;
+  bottom: -145px;
+
+  width: 364px;
+  height: 228px;
+  background-image: url("../img/gym-video.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 364px 228px;
 }
 
 .gym__title {
-  margin: 0;
+  margin: 0 0 10px 0;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -21,11 +51,21 @@
 }
 
 .gym__text {
+  margin: 0 0 23px 0;
+
   font-size: 18px;
   line-height: 150%;
 }
 
 .gym__description {
+  width: 355px;
+  margin: 15px 0 8px 0;
+
   font-size: 16px;
   line-height: 150%;
+  font-weight: 300;
+}
+
+.gym__description--bottom {
+  margin: 0;
 }
