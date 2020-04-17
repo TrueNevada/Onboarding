@@ -3,5 +3,12 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  overflow: hidden;
+}
+
+.slider__item {
+  width: 260px;
+}
+
+.slider__image {
+  margin: 0;
 }

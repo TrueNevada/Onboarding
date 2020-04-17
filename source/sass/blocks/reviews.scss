@@ -15,5 +15,17 @@
 }
 
 .reviews__slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 300px
+}
+
+.reviews__slide {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  padding: 62px;
   background-color: #1c3374;
 }

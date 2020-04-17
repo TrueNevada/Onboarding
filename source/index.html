@@ -15,7 +15,6 @@
   <link rel="preload" href="fonts/RobotoCondensed.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -174,31 +173,49 @@
 
       <div class="container">
 
+        <h3 class="trainers__title">Тренеры</h3>
+
         <div class="trainers__slider slider">
 
           <div class="slider__item">
-            <img src="img/trainer-1.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-1.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-2.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-2.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-3.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-3.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-4.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-4.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-1.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-3.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-2.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-2.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-3.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-4.jpg" width="260" height="294">
+            </picture>
           </div>
           <div class="slider__item">
-            <img src="img/trainer-4.jpg" width="260" height="294">
+            <picture>
+              <img class="slider__image" src="img/trainer-1.jpg" width="260" height="294">
+            </picture>
           </div>
 
         </div>
@@ -215,15 +232,21 @@
 
         <div class="advantages__wrapper">
           <div class="advantages__block">
-            <div class="advantages__element">
-              <p class="advantages__element-info">900<span class="advantages__element-text">кв/м</span></p>
+            <div class="advantages__element advantages__element--top">
+              <div class="advantages__element-wrap">
+                <h4 class="advantages__element-info">900</h4>
+                <p class="advantages__element-text">кв/м</p>
+              </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Площадь</h4>
                 <p class="advantages__element-description">Занимайтесь без очередей и толпучки</p>
               </div>
             </div>
             <div class="advantages__element">
-              <p class="advantages__element-info">350<span class="advantages__element-text">мест</span></p>
+              <div class="advantages__element-wrap">
+                <h4 class="advantages__element-info">350</h4>
+                <p class="advantages__element-text">мест</p>
+              </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Комфорт</h4>
                 <p class="advantages__element-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
@@ -231,20 +254,26 @@
             </div>
           </div>
           <div class="advantages__block advantages__block--middle">
-            <h4>100</h4>
-            <p>Тренажеров</p>
-            <p>Современные тренажеры на все группы мышц</p>
+            <h4 class="advantages__block-title">100</h4>
+            <p class="advantages__block-text">Тренажеров</p>
+            <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
           </div>
           <div class="advantages__block">
-            <div class="advantages__element">
-              <p class="advantages__element-info">70<span class="advantages__element-text">машин</span></p>
+            <div class="advantages__element advantages__element--top">
+              <div class="advantages__element-wrap">
+                <h4 class="advantages__element-info">70</h4>
+                <p class="advantages__element-text">машин</p>
+              </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Собственная парковка</h4>
                 <p class="advantages__element-description">Вы всегда найдете место для своей машины на нашей парковке</p>
               </div>
             </div>
             <div class="advantages__element">
-              <p class="advantages__element-info">5+<span class="advantages__element-text">лет</span></p>
+              <div class="advantages__element-wrap">
+                <h4 class="advantages__element-info">5+</h4>
+                <p class="advantages__element-text">лет</p>
+              </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Тренерский опыт</h4>
                 <p class="advantages__element-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -301,8 +330,18 @@
           <div class="reviews__slide">
             <p>Анна Орлова</p>
             <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            <button type="button">left button</button>
-            <button type="button">right button</button>
+          </div>
+          <div class="reviews__slide">
+            <p>Анна Орлова</p>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+          <div class="reviews__slide">
+            <p>Анна Орлова</p>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+          <div class="reviews__slide">
+            <p>Анна Орлова</p>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
         </div>
 
@@ -328,21 +367,25 @@
           <article class="contacts">
             <h3 class="contacts__title">Контакты</h3>
             <div class="contacts__wrapper">
-              <div class="contacts__item">
-                <h4>Адрес:</h4>
-                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              <div class="contacts__block contacts__block--left">
+                <div class="contacts__item">
+                  <h4 class="contacts__item-title">Адрес:</h4>
+                  <p class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="contacts__item">
+                  <h4 class="contacts__item-title">График работы:</h4>
+                  <p class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</p>
+                </div>
               </div>
-              <div class="contacts__item">
-                <h4>График работы:</h4>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </div>
-              <div class="contacts__item">
-                <h4>Телефон:</h4>
-                <a href="tel:8-800-555-55-55">8-800-555-55-55</a>
-              </div>
-              <div class="contacts__item">
-                <h4>Email:</h4>
-                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              <div class="contacts__block contacts__block--right">
+                <div class="contacts__item">
+                  <h4 class="contacts__item-title">Телефон:</h4>
+                  <a class="contacts__item-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+                </div>
+                <div class="contacts__item">
+                  <h4 class="contacts__item-title">Email:</h4>
+                  <a class="contacts__item-link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
               </div>
             </div>
           </article>
@@ -396,7 +439,7 @@
 
   <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script src="js/carousel.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 </html>
