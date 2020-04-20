@@ -1,5 +1,17 @@
+.trainers {
+  padding: 0 0 117px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 99px;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 0 0 69px;
+  }
+}
+
 .trainers__title {
-  margin: 0;
+  margin: 0 0 52px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -7,4 +19,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #102654;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 41px;
+
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 43px;
+
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+  }
 }

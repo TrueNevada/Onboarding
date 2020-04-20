@@ -4,7 +4,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 30px 0 96px 0;
+  padding: 30px 0 96px;
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 0 106px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 20px 0 80px;
+
+    background-image: url("../img/cover-mobile.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .page-header__wrap {
@@ -14,6 +27,10 @@
   justify-content: space-between;
 
   margin-bottom: 112px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .page-header__logo {
@@ -22,6 +39,17 @@
   line-height: 26px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .page-header__phone {
@@ -31,6 +59,17 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .page-header__container {
@@ -50,14 +89,31 @@
 
   width: 500px;
   height: 556px;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header-desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 500px 556px;
+
+  @media (max-width: $tablet-width) {
+    content: "";
+    top: -55px;
+    right: 0;
+
+    width: 324px;
+    height: 390px;
+    background-image: url("../img/header-tablet.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 324px 390px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
-.page-header__description {
-  margin: 0 0 10px 0;
+.page-header__text {
+  margin: 0 0 10px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -67,6 +123,20 @@
   text-transform: uppercase;
   text-align: right;
   color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 5px;
+
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 12px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .page-header__wrapper {
@@ -74,6 +144,10 @@
   flex-direction: column;
   align-items: flex-end;
   width: 395px;
+
+  @media (max-width: $tablet-width) {
+    width: 325px;
+  }
 }
 
 .page-header__navigation {
@@ -83,6 +157,10 @@
   position: relative;
 
   margin-bottom: 58px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-header__title {
@@ -96,6 +174,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 78px;
+    line-height: 78px;
+  }
 }
 
 .page-header__menu {
@@ -111,18 +199,20 @@
   line-height: 150%;
   font-weight: 400;
   text-align: right;
+
+  @media (max-width: $tablet-width) {
+    bottom: 15px;
+    left: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: 12px;
+    left: 0;
+  }
 }
 
 .page-header__buy {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 230.4px;
-}
-
-.page-header__button {
-  padding: 19px 53px 19px 53px;
+  padding: 19px 53px;
 
   font-size: 12px;
   line-height: 14px;
@@ -132,6 +222,14 @@
   text-align: center;
   color: #ffffff;
   border: 4px solid #ffffff;
+
+  @media (max-width: $tablet-width) {
+    padding: 19px 31px 19px 31px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 21px 83px 20px 82px;
+  }
 };
 
 .page-header__links {
@@ -148,5 +246,9 @@
 
   font-size: 12px;
   line-height: 14px;
-  text-transform: uppercase
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 };

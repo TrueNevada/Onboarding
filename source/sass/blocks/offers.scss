@@ -1,10 +1,18 @@
 .offers {
-  padding: 120px 0;
+  padding: 120px 0 118px;
   color: #102654;
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 0 98px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 69px 0 70px;
+  }
 }
 
 .offers__title {
-  margin: 0 0 42px;
+  margin: 0 0 52px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -12,24 +20,61 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 42px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 43px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .offers__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .offers__block {
   width: 560px;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
 }
 
 .offers__block--left {
   position: relative;
-  padding: 45px 0 45px 45px;
+  padding: 40px 0 45px 45px;
 
   background-color: #ed0233;
   color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 0 343px;
+  }
 }
 
 .offers__block--left::after {
@@ -40,42 +85,73 @@
 
   width: 280px;
   height: 462px;
-  background-image: url("../img/offer.jpg");
+  background-image: url("../img/offer-desktop.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 280px 462px;
+
+  @media (max-width: $tablet-width) {
+    width: 399px;
+    height: 462px;
+    background-image: url("../img/offer-tablet.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 399px 462px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 299px;
+
+    width: 290px;
+    height: 299px;
+    background-image: url("../img/offer-mobile.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 290px 299px;
+  }
 }
 
 .offers__block-text {
   margin: 0;
 
   font-size: 28px;
-  line-height: 156%;
+  line-height: 100%;
   font-weight: 700;
 }
 
 .offers__block-price {
-  margin: 0;
+  margin: 0 0 12px;
 
   font-size: 70px;
   line-height: 80px;
   font-weight: 700;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 9px;
+  }
 }
 
 .offers__block-description {
   width: 189px;
-  margin: 0 0 177px;
+  margin: 0 0 185px;
 
   font-size: 18px;
   line-height: 140%;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 30px;
+    text-align: center;
+  }
 }
 
 .offers__block-link {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-  border-bottom: 1px solid #ffffff;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  border-bottom: 1px solid #ffffff;
 }
 
 .offers__block--right {
@@ -83,12 +159,31 @@
   flex-direction: column;
   justify-content: space-between;
   color: #1c3374;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .offers__element-wrap {
   padding: 7px;
   margin-bottom: 40px;
   background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+
+  @media (max-width: $tablet-width) {
+    width: 324px;
+    height: 211px;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .offers__element-wrap--bottom {
@@ -96,21 +191,55 @@
 }
 
 .offers__element {
-  padding: 10px 28px 10px;
+  padding: 18px 28px 26px;
   background-color: #ffffff;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 38px;
+  }
 }
 
 .offers__element-title {
-  margin: 0;
+  margin: 0 0 3px;
 
   font-size: 26px;
   line-height: 150%;
   font-weight: 700;
 }
 
-.offers__element-description {
+.offers__element-text {
   font-size: 16px;
   line-height: 140%;
-  margin: 0 0 80px 0;
+  margin: 0 0 67px;
+
+  @media (max-width: $mobile-width) {
+    width: 160px;
+    margin: 0 0 28px;
+
+    text-align: center;
+  }
 }
 
+.offers__element-text--friend {
+  @media (max-width: $tablet-width) {
+    width: 153px;
+    margin: 0 0 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 160px;
+  }
+}
+
+.offers__element-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #1C3374;
+}

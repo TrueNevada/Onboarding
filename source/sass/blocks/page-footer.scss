@@ -1,5 +1,14 @@
 .page-footer {
+  padding: 40px 0 36px;
   background-color: #030A1A;
+
+  @media (max-width: $tablet-width) {
+    padding: 42px 0 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 0 36px;
+  }
 }
 
 .page-footer__wrapper {
@@ -7,14 +16,33 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .page-footer__logo {
+  padding-right: 21px;
+
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 26px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.02em;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .page-footer__navigation {
@@ -27,6 +55,45 @@
 
   font-size: 14px;
   line-height: 16px;
+
+  @media (max-width: $tablet-width) {
+    width: 391px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 22px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.page-footer__link {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.page-footer__link--offers {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: -40px;
+    right: 88px;
+  }
+}
+
+.page-footer__link--trainers,
+.page-footer__link--table {
+  @media (max-width: $mobile-width) {
+    margin-left: 22px;
+  }
 }
 
 .page-footer__social {
@@ -37,6 +104,35 @@
   justify-content: space-between;
 
   width: 110px;
-  padding: 0;
+  padding: 2px 0 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 143px;
+  }
 }
 
+.page-footer__link-vk {
+  @media (max-width: $mobile-width) {
+    width: 32px;
+    height: 17px;
+  }
+}
+
+.page-footer__link-ig {
+  @media (max-width: $mobile-width) {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.page-footer__link-fb {
+  @media (max-width: $mobile-width) {
+    width: 14px;
+    height: 27px;
+  }
+}

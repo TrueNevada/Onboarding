@@ -5,30 +5,95 @@
   width: 50%;
   padding-left: 120px;
   color: #102654;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0 0;
+  }
 }
 
 .contacts__title {
-  margin: 0 0 50px;
+  margin: 0 0 34px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
   text-transform: lowercase;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 20px 0 34px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 44px 0 35px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: row;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .contacts__block--left {
   padding-right: 60px;
-  border-right: 1px solid #74819C
 }
 
 .contacts__block--right {
-  padding-left: 60px;
+  position: relative;
+  padding-left: 58px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}
+
+.contacts__block--right::before {
+  content: "";
+  position: absolute;
+  top: 57px;
+  left: -48px;
+
+  width: 102px;
+  height: 1px;
+  background: #74819c;
+  transform: rotate(90deg);
+
+  @media (max-width: $tablet-width) {
+    width: 129px;
+    top: 72px;
+    left: -75px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.contacts__item {
+  padding: 0 0 17px 3px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__item-title {
@@ -37,14 +102,34 @@
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.contacts__item-title--right {
+  margin-bottom: 3px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .contacts__item-text {
-  margin: 0;
+  margin: 4px 0 0;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    margin: 5px 0 0;
+
+    font-size: 18px;
+    line-height: 152.34%;
+  }
 }
 
 .contacts__item-link {
@@ -52,4 +137,9 @@
   line-height: 21px;
   font-weight: 400;
   color: #102654;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
 }

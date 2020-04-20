@@ -1,15 +1,35 @@
 .free-class {
+  display: flex;
   width: 50%;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 85px;
+  }
 }
 
 .free-class__title {
-  margin: 0 0 50px;
+  margin: 0 0 37px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
   text-transform: lowercase;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 38px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .free-class__wrapper {
@@ -18,6 +38,15 @@
   justify-content: space-between;
 
   width: 410px;
+
+  @media (max-width: $tablet-width) {
+    width: 472px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    width: 290px;
+  }
 }
 
 .free-class__input {
@@ -30,6 +59,17 @@
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #74819C;
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    padding-bottom: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    padding-bottom: 7px;
+    margin-bottom: 35px;
+  }
 }
 
 .free-class__input::placeholder {
@@ -42,11 +82,28 @@
 
 .free-class__submit {
   margin: 30px 0 0;
-  padding: 16px 169px;
+  padding: 15px 164px;
 
   background: none;
 
   color: #ffffff;
   border: 3px solid #ffffff;
   cursor: pointer;
+
+  font-family: "RobotoCondensed", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 195px 15px 194px;
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15px 103px 15px 104px;
+    margin: 5px 0 0;
+  }
 }

@@ -1,10 +1,17 @@
 .abonements {
   position: relative;
 
-  padding: 120px 0 120px 0;
+  padding: 120px 0 120px;
   background-color: #F8F9FC;
   color: #102654;
-  z-index: -1;
+
+  @media (max-width: $tablet-width) {
+    padding: 99px 0 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 69px 0 35px;
+  }
 }
 
 .abonements::after {
@@ -16,14 +23,30 @@
 
   width: 287px;
   height: 494px;
-  background-image: url("../img/weights.png");
+  background-image: url("../img/weights-desktop.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 287px 494px;
+  z-index: 0;
+
+  @media (max-width: $tablet-width) {
+    bottom: -125px;
+
+    width: 347px;
+    height: 444px;
+    background-image: url("../img/weights-tablet.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 347px 444px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .abonements__title {
-  margin: 0 0 53px 0;
+  margin: 0 0 53px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -31,12 +54,26 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 .abonements__slider {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -50,6 +87,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .abonements__item {
@@ -60,7 +101,45 @@
   padding: 64px 77px 67px;
 
   background-color: #ffffff;
+  cursor: pointer;
   z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    padding: 64px 118px 67px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 51px 42px 55px;
+    margin-bottom: 35px;
+  }
+}
+
+.abonements__item:focus {
+  background-image: url("../img/contour-desktop.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 360px 448px;
+  outline: none;
+
+  .abonements__item-button {
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    border-color: #ffffff;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/contour-tablet.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 442px 448px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/contour-mobile.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 290px 384px;
+  }
 }
 
 .abonements__item-title {
@@ -70,20 +149,29 @@
   line-height: 29px;
   font-weight: 700;
   color: #102654;
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .abonements__item-time {
-  margin: 0 0 65px 0;
+  margin: 0 0 65px;
 
   font-size: 16px;
   line-height: 150%;
   color: #495A7D;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 53px;
+  }
 }
 
 .abonements__item-price {
   position: relative;
 
-  margin: 0 0 35px 0;
+  margin: 0 0 35px;
   padding-left: 5px;
 
   font-size: 60px;
@@ -91,6 +179,14 @@
   font-weight: 700;
   color: #103aae;
   z-index: 2;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 30px;
+    padding-left: 7px;
+
+    font-size: 48px;
+    line-height: 150%;
+  }
 }
 
 .abonements__item-currency {
@@ -108,6 +204,12 @@
   color: #e8e8e8;
   opacity: 0.42;
   z-index: -1;
+
+  @media (max-width: $mobile-width) {
+    font-size: 80px;
+    line-height: 150%;
+    left: -10px;
+  }
 }
 
 .abonements__item-button {
@@ -120,4 +222,15 @@
   text-transform: uppercase;
   color: #102654;
   border: 2px solid #102654;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    padding: 23px 42px 24px 43px;
+  }
+}
+
+.abonements__item-button:focus,
+.abonements__item-button:hover {
+  background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-color: #ffffff;
 }

@@ -38,7 +38,7 @@
 
       <div class="page-header__container">
         <div class="page-header__wrapper">
-          <p class="page-header__description">Омск</p>
+          <p class="page-header__text">Омск</p>
           <div class="page-header__navigation">
             <h3 class="page-header__title">Фитнес центр</h3>
             <nav class="page-header__menu">
@@ -47,9 +47,7 @@
               <a class="page-header__menu-link">Кардио-зона</a>
             </nav>
           </div>
-          <div class="page-header__buy">
-            <a class="page-header__button" href="#abonements">Купить абонемент</a>
-          </div>
+          <a class="page-header__buy" href="#abonements">Купить абонемент</a>
         </div>
         <ul class="page-header__links">
           <li>
@@ -78,7 +76,7 @@
 
         <div class="gym__wrapper">
 
-          <h3 class="gym__title">Тренажёрный зал</h3>
+          <h3 class="gym__title">Тренажерный зал</h3>
 
           <p class="gym__text">Просторный зал площадью 900 кв/м</p>
 
@@ -110,7 +108,7 @@
 
           <div class="abonements__variations">
 
-            <div class="abonements__item">
+            <div class="abonements__item" tabindex="0">
               <h4 class="abonements__item-title">С тренером</h4>
               <p class="abonements__item-time">12 занятий</p>
               <p class="abonements__item-price">5000
@@ -119,7 +117,7 @@
               </p>
               <a class="abonements__item-button" href="#">Купить абонемент</a>
             </div>
-            <div class="abonements__item">
+            <div class="abonements__item" tabindex="0">
               <h4 class="abonements__item-title">Дневной</h4>
               <p class="abonements__item-time">с 8:00 до 17:00</p>
               <p class="abonements__item-price">1700
@@ -128,7 +126,7 @@
               </p>
               <a class="abonements__item-button" href="#">Купить абонемент</a>
             </div>
-            <div class="abonements__item">
+            <div class="abonements__item" tabindex="0">
               <h4 class="abonements__item-title">Полный день</h4>
               <p class="abonements__item-time">с 8:00 до 22:00</p>
               <p class="abonements__item-price">2700
@@ -231,17 +229,34 @@
         <h3 class="advantages__title">Наши преимущества</h3>
 
         <div class="advantages__wrapper">
-          <div class="advantages__block">
-            <div class="advantages__element advantages__element--top">
+          <div class="advantages__block advantages__block--top">
+            <div class="advantages__element">
               <div class="advantages__element-wrap">
                 <h4 class="advantages__element-info">900</h4>
                 <p class="advantages__element-text">кв/м</p>
               </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Площадь</h4>
-                <p class="advantages__element-description">Занимайтесь без очередей и толпучки</p>
+                <p class="advantages__element-description">Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </div>
+            <div class="advantages__element advantages__element--parking">
+              <div class="advantages__element-wrap">
+                <h4 class="advantages__element-info">70</h4>
+                <p class="advantages__element-text">машин</p>
+              </div>
+              <div class="advantages__wrap">
+                <h4 class="advantages__element-title">Собственная парковка</h4>
+                <p class="advantages__element-description">Вы всегда найдете место для своей&nbsp;машины на нашей парковке</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__block advantages__block--middle">
+            <h4 class="advantages__block-title">100</h4>
+            <p class="advantages__block-text">Тренажеров</p>
+            <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
+          </div>
+          <div class="advantages__block advantages__block--bottom">
             <div class="advantages__element">
               <div class="advantages__element-wrap">
                 <h4 class="advantages__element-info">350</h4>
@@ -252,31 +267,14 @@
                 <p class="advantages__element-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </div>
-          </div>
-          <div class="advantages__block advantages__block--middle">
-            <h4 class="advantages__block-title">100</h4>
-            <p class="advantages__block-text">Тренажеров</p>
-            <p class="advantages__block-description">Современные тренажеры на все группы мышц</p>
-          </div>
-          <div class="advantages__block">
-            <div class="advantages__element advantages__element--top">
-              <div class="advantages__element-wrap">
-                <h4 class="advantages__element-info">70</h4>
-                <p class="advantages__element-text">машин</p>
-              </div>
-              <div class="advantages__wrap">
-                <h4 class="advantages__element-title">Собственная парковка</h4>
-                <p class="advantages__element-description">Вы всегда найдете место для своей машины на нашей парковке</p>
-              </div>
-            </div>
-            <div class="advantages__element">
+            <div class="advantages__element advantages__element--experience">
               <div class="advantages__element-wrap">
                 <h4 class="advantages__element-info">5+</h4>
                 <p class="advantages__element-text">лет</p>
               </div>
               <div class="advantages__wrap">
                 <h4 class="advantages__element-title">Тренерский опыт</h4>
-                <p class="advantages__element-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <p class="advantages__element-description">Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
               </div>
             </div>
           </div>
@@ -303,14 +301,14 @@
             <div class="offers__element-wrap">
               <div class="offers__element">
                 <h4 class="offers__element-title">Месяц бесплатно</h4>
-                <p class="offers__element-description">Приведи друга, получи абонемент в подарок</p>
+                <p class="offers__element-text offers__element-text--friend">Приведи друга, получи абонемент в подарок</p>
                 <a class="offers__element-link">Подробнее</a>
               </div>
             </div>
             <div class="offers__element-wrap offers__element-wrap--bottom">
               <div class="offers__element">
                 <h4 class="offers__element-title">Скидка 20%</h4>
-                <p class="offers__element-description">Корпоративный фитнес с командой</p>
+                <p class="offers__element-text">Корпоративный фитнес с командой</p>
                 <a class="offers__element-link">Подробнее</a>
               </div>
             </div>
@@ -328,20 +326,34 @@
         <h3 class="reviews__title">Отзывы</h3>
         <div class="reviews__slider">
           <div class="reviews__slide">
-            <p>Анна Орлова</p>
-            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="reviews__wrapper">
+              <img class="reviews__image" src="img/review.png" width="80" height="80">
+              <div class="reviews__wrap">
+                <h4 class="reviews__name">Анна Орлова</h4>
+                <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </div>
           </div>
           <div class="reviews__slide">
-            <p>Анна Орлова</p>
-            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <img class="reviews__image" src="img/review.png" width="80" height="80">
+            <div class="reviews__wrap">
+              <h4 class="reviews__name">Анна Орлова</h4>
+              <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
           <div class="reviews__slide">
-            <p>Анна Орлова</p>
-            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <img class="reviews__image" src="img/review.png" width="80" height="80">
+            <div class="reviews__wrap">
+              <h4 class="reviews__name">Анна Орлова</h4>
+              <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
           <div class="reviews__slide">
-            <p>Анна Орлова</p>
-            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <img class="reviews__image" src="img/review.png" width="80" height="80">
+            <div class="reviews__wrap">
+              <h4 class="reviews__name">Анна Орлова</h4>
+              <p class="reviews__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
           </div>
         </div>
 
@@ -379,11 +391,11 @@
               </div>
               <div class="contacts__block contacts__block--right">
                 <div class="contacts__item">
-                  <h4 class="contacts__item-title">Телефон:</h4>
+                  <h4 class="contacts__item-title contacts__item-title--right">Телефон:</h4>
                   <a class="contacts__item-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
                 </div>
                 <div class="contacts__item">
-                  <h4 class="contacts__item-title">Email:</h4>
+                  <h4 class="contacts__item-title contacts__item-title--right">Email:</h4>
                   <a class="contacts__item-link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                 </div>
               </div>
@@ -405,9 +417,9 @@
         <nav class="page-footer__navigation">
           <a class="page-footer__link">Услуги</a>
           <a class="page-footer__link">Абонементы</a>
-          <a class="page-footer__link">Акции</a>
-          <a class="page-footer__link">Тренеры</a>
-          <a class="page-footer__link">Расписание</a>
+          <a class="page-footer__link page-footer__link--offers">Акции</a>
+          <a class="page-footer__link page-footer__link--trainers">Тренеры</a>
+          <a class="page-footer__link page-footer__link--table">Расписание</a>
         </nav>
         <ul class="page-footer__social">
           <li>
