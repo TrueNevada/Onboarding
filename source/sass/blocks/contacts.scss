@@ -6,7 +6,7 @@
   padding-left: 120px;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -23,7 +23,7 @@
   letter-spacing: 0.03em;
   text-transform: lowercase;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 100%;
     margin: 20px 0 34px;
 
@@ -31,7 +31,7 @@
     line-height: 42px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 44px 0 35px;
 
     font-size: 32px;
@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: row;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
   }
 }
@@ -56,11 +56,11 @@
   position: relative;
   padding-left: 58px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-left: 35px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -76,13 +76,13 @@
   background: #74819c;
   transform: rotate(90deg);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 129px;
     top: 72px;
     left: -75px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
@@ -90,7 +90,7 @@
 .contacts__item {
   padding: 0 0 17px 3px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0;
     margin-bottom: 20px;
   }
@@ -103,7 +103,7 @@
   line-height: 150%;
   font-weight: 700;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 20px;
     line-height: 150%;
   }
@@ -112,7 +112,7 @@
 .contacts__item-title--right {
   margin-bottom: 3px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin-bottom: 5px;
   }
 }
@@ -124,7 +124,7 @@
   line-height: 21px;
   font-weight: 400;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 5px 0 0;
 
     font-size: 18px;
@@ -138,7 +138,7 @@
   font-weight: 400;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 18px;
     line-height: 152.34%;
   }

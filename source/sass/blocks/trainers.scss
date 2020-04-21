@@ -1,7 +1,7 @@
 .trainers {
   padding: 0 0 117px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0 0 99px;
   }
 
@@ -20,7 +20,7 @@
   text-transform: uppercase;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 41px;
 
     font-size: 42px;
@@ -28,7 +28,7 @@
     text-align: center;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 43px;
 
     font-size: 32px;

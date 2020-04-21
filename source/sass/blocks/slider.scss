@@ -10,12 +10,12 @@
 }
 
 .slider__image {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 268px;
     height: 294px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 226px;
     height: 274px;
   }

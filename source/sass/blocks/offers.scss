@@ -2,11 +2,11 @@
   padding: 120px 0 118px;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 100px 0 98px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 69px 0 70px;
   }
 }
@@ -21,14 +21,14 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 42px;
 
     font-size: 42px;
     line-height: 42px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 43px;
 
     font-size: 32px;
@@ -41,7 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: column;
   }
 }
@@ -49,11 +49,11 @@
 .offers__block {
   width: 560px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 678px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 290px;
   }
 }
@@ -65,11 +65,11 @@
   background-color: #ed0233;
   color: #ffffff;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 30px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +90,7 @@
   background-repeat: no-repeat;
   background-size: 280px 462px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 399px;
     height: 462px;
     background-image: url("../img/offer-tablet.jpg");
@@ -99,7 +99,7 @@
     background-size: 399px 462px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     top: 299px;
 
     width: 290px;
@@ -126,7 +126,7 @@
   line-height: 80px;
   font-weight: 700;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 9px;
   }
 }
@@ -138,7 +138,7 @@
   font-size: 18px;
   line-height: 140%;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 30px;
     text-align: center;
   }
@@ -160,11 +160,11 @@
   justify-content: space-between;
   color: #1c3374;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: row;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
   }
 }
@@ -174,13 +174,13 @@
   margin-bottom: 40px;
   background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 324px;
     height: 211px;
     margin: 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -194,7 +194,7 @@
   padding: 18px 28px 26px;
   background-color: #ffffff;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +215,7 @@
   line-height: 140%;
   margin: 0 0 67px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 160px;
     margin: 0 0 28px;
 
@@ -224,12 +224,12 @@
 }
 
 .offers__element-text--friend {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 153px;
     margin: 0 0 28px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 160px;
   }
 }

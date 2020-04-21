@@ -2,11 +2,11 @@
   padding: 165px 0 265px;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 100px 0 563px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 68px 0 615px;
   }
 }
@@ -19,12 +19,12 @@
   align-items: flex-start;
   padding-left: 60px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     align-items: center;
     padding-left: 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     align-items: flex-start;
   }
 }
@@ -42,7 +42,7 @@
   background-repeat: no-repeat;
   background-size: 660px 401px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     left: 0;
     top: 225px;
 
@@ -53,7 +53,7 @@
     background-repeat: no-repeat;
     background-size: 678px 345px;
   }
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     left: -15px;
     top: 265px;
 
@@ -79,7 +79,7 @@
   background-repeat: no-repeat;
   background-size: 364px 228px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     right: 205px;
     top: 487px;
 
@@ -91,7 +91,7 @@
     background-size: 266px 167px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     right: -15px;
     top: 620px;
 
@@ -113,7 +113,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 9px;
 
     font-size: 42px;
@@ -121,7 +121,7 @@
     text-align: center;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 7px;
 
     font-size: 32px;
@@ -135,7 +135,7 @@
   font-size: 18px;
   line-height: 150%;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 18px;
   }
 
@@ -152,12 +152,12 @@
   line-height: 150%;
   font-weight: 300;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 502px;
     text-align: center;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 258px;
     text-align: left;
   }
@@ -166,7 +166,7 @@
 .gym__description--bottom {
   margin: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }

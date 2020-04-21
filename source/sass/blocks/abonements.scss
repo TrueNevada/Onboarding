@@ -5,11 +5,11 @@
   background-color: #F8F9FC;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 99px 0 60px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 69px 0 35px;
   }
 }
@@ -29,7 +29,7 @@
   background-size: 287px 494px;
   z-index: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     bottom: -125px;
 
     width: 347px;
@@ -40,13 +40,13 @@
     background-size: 347px 444px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
 .abonements__title {
-  margin: 0 0 53px;
+  margin: 0 0 33px;
 
   font-family: "BebasNeue", "Arial", sans-serif;
   font-size: 49px;
@@ -55,12 +55,12 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 42px;
     line-height: 42px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
   }
@@ -68,18 +68,77 @@
 
 .abonements__slider {
   display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 5px;
   }
 }
 
+.abonements__slider-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 341px;
+  order: 2;
 
-.abonements__tickmarks {
+  width: 341px;
+
+  @media (max-width: $desktop-width) {
+    width: 332px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
+}
+
+.abonements__slider-input {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.abonements__slider-input::-webkit-slider-runnable-track {
+  cursor: pointer;
+  height: 2px;
+  background: rgba(120, 120, 120, 0.2);
+}
+
+.abonements__slider-input::-webkit-slider-thumb {
+  width: 67px;
+  height: 2px;
+  background: #d10a42;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.abonements__data {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  order: 1;
+
+  width: 341px;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 150%;
+
+  @media (max-width: $desktop-width) {
+    width: 332px;
+
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 .abonements__variations {
@@ -88,7 +147,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: column;
   }
 }
@@ -104,12 +163,12 @@
   cursor: pointer;
   z-index: 1;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 64px 118px 67px;
     margin-bottom: 40px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 51px 42px 55px;
     margin-bottom: 35px;
   }
@@ -127,14 +186,14 @@
     border-color: #ffffff;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     background-image: url("../img/contour-tablet.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 442px 448px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     background-image: url("../img/contour-mobile.png");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -150,7 +209,7 @@
   font-weight: 700;
   color: #102654;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     font-size: 22px;
     line-height: 24px;
   }
@@ -163,7 +222,7 @@
   line-height: 150%;
   color: #495A7D;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 53px;
   }
 }
@@ -180,7 +239,7 @@
   color: #103aae;
   z-index: 2;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 30px;
     padding-left: 7px;
 
@@ -205,7 +264,7 @@
   opacity: 0.42;
   z-index: -1;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     font-size: 80px;
     line-height: 150%;
     left: -10px;
@@ -224,7 +283,7 @@
   border: 2px solid #102654;
   cursor: pointer;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 23px 42px 24px 43px;
   }
 }

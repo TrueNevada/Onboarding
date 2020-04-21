@@ -2,11 +2,11 @@
   padding: 40px 0 36px;
   background-color: #030A1A;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 42px 0 36px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 50px 0 36px;
   }
 }
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -32,12 +32,12 @@
   font-weight: 700;
   letter-spacing: 0.02em;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 24px;
     line-height: 24px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 19px;
 
     font-size: 20px;
@@ -56,11 +56,11 @@
   font-size: 14px;
   line-height: 16px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 391px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     position: relative;
 
     flex-direction: column;
@@ -76,13 +76,13 @@
 }
 
 .page-footer__link {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 11px;
   }
 }
 
 .page-footer__link--offers {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     position: absolute;
     top: -40px;
     right: 88px;
@@ -91,7 +91,7 @@
 
 .page-footer__link--trainers,
 .page-footer__link--table {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin-left: 22px;
   }
 }
@@ -107,31 +107,31 @@
   padding: 2px 0 0;
   margin: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     width: 100px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 143px;
   }
 }
 
 .page-footer__link-vk {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 32px;
     height: 17px;
   }
 }
 
 .page-footer__link-ig {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 27px;
     height: 27px;
   }
 }
 
 .page-footer__link-fb {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 14px;
     height: 27px;
   }

@@ -45,11 +45,11 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0 45px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0 15px;
   }
 };

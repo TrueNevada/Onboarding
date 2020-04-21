@@ -2,12 +2,12 @@
   background: linear-gradient(to left, #ffffff 50%, #102654 50%);
   border-top: 1px solid #74819C;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     height: 675px;
     background: linear-gradient(to top, #ffffff 52%, #102654 48%);
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     height: 893px;
     background: linear-gradient(to top, #ffffff 56.7%, #102654 43.3%);
   }
@@ -19,13 +19,13 @@
 
   padding: 60px 0 45px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: column;
 
     padding: 68px 88px 45px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 68px 0 0;
   }
 }

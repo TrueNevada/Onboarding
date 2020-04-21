@@ -4,11 +4,11 @@
   background-color: #f8f9fc;
   color: #102654;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 100px 0 92px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 69px 0 31px;
   }
 }
@@ -23,14 +23,14 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 30px;
 
     font-size: 42px;
     line-height: 42px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 42px;
 
     font-size: 32px;
@@ -48,7 +48,7 @@
 
   padding: 0 60px 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: column;
     align-items: center;
     padding: 0;
@@ -62,14 +62,14 @@
   justify-content: space-between;
   width: 100%;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     flex-direction: row;
 
     width: 678px;
     padding: 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 100%;
     flex-direction: column;
   }
@@ -80,7 +80,7 @@
   padding-left: 27px;
   margin-bottom: 130px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0;
     margin: 0;
   }
@@ -96,7 +96,7 @@
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }
@@ -111,7 +111,7 @@
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }
@@ -119,7 +119,7 @@
 .advantages__block--bottom {
   padding-left: 20px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -140,7 +140,7 @@
   background-color: #1c3374;
   color: #ffffff;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     position: unset;
 
     width: 442px;
@@ -148,7 +148,7 @@
     margin: 42px 0 28px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 320px;
     padding: 37px 0 45px;
     margin: 12px 0 38px;
@@ -171,14 +171,14 @@
   line-height: 150%;
   font-weight: 700;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 13px;
 
     font-size: 22px;
     line-height: 150%;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     line-height: 100%;
   }
 }
@@ -199,7 +199,7 @@
   align-items: flex-start;
   width: 340px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -207,21 +207,21 @@
 }
 
 .advantages__element--parking {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-left: 15px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 }
 
 .advantages__element--experience {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding-left: 15px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -230,7 +230,7 @@
   position: relative;
   padding-right: 30px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 0;
   }
 }
@@ -247,12 +247,12 @@
   -webkit-text-fill-color: transparent;
   color: #0B2349;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     font-size: 58px;
     line-height: 150%;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding-top: 1px;
     line-height: 100%;
   }
@@ -269,7 +269,7 @@
   font-weight: 400;
   color: #2E35AC;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     position: unset;
     text-align: center;
   }
@@ -282,14 +282,14 @@
   line-height: 100%;
   font-weight: 700;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     margin: 0 0 5px;
 
     font-size: 20px;
     line-height: 150%;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     margin: 0 0 6px;
 
     line-height: 100%;
@@ -304,7 +304,7 @@
   line-height: 140%;
   font-weight: 300;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     text-align: center;
     width: 228px;
     margin-bottom: 32px;
@@ -314,11 +314,11 @@
 .advantages__wrap {
   padding: 27px 0 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     padding: 12px 0 0;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     padding: 10px 0 0;
   }
 }
