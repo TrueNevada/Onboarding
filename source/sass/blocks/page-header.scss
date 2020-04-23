@@ -230,7 +230,7 @@
   }
 };
 
-.page-header__links {
+.page-header__social {
   list-style: none;
 
   display: flex;
@@ -250,3 +250,7 @@
     display: none;
   }
 };
+
+.page-header__social-link {
+  color: #ffffff;
+}

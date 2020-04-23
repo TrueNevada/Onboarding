@@ -1,0 +1,80 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 18px;
+  color: #15367A;
+}
+
+.table__title {
+  font-family: "BebasNeue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #102654;
+}
+
+.table__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 546px;
+}
+
+.table__week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1087px;
+}
+
+.table__week-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 66px;
+  border: 2px solid #1C3374;
+}
+
+.table__classes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.table__class-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 110px;
+  border: 2px solid #1C3374;
+
+  text-align: center;
+}
+
+.table__class-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 148px;
+  height: 110px;
+  background-color: #F8F9FC;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.table__class-type:hover,
+.table__class-type:focus {
+  outline: 2px solid #ED0233;
+}
