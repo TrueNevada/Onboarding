@@ -227,11 +227,12 @@
 .offers__element-text--friend {
   @media (max-width: $desktop-width) {
     width: 153px;
-    margin: 0 0 28px;
+    margin: 0 0 45px;
   }
 
   @media (max-width: $tablet-width) {
     width: 160px;
+    margin: 0 0 28px;
   }
 }
 
