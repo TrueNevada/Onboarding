@@ -45,11 +45,33 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 
+  position: relative;
+
   @media (max-width: $desktop-width) {
+    width: 768px;
     padding: 0 45px;
   }
 
   @media (max-width: $tablet-width) {
+    width: 320px;
     padding: 0 15px;
   }
-};
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.5;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 0.8;
+}
+
+.link:active {
+  opacity: 0.5;
+}

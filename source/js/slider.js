@@ -4,6 +4,7 @@ $(function() {
     slidesToShow: 4,
     slidesToScroll: 4,
 
+    arrows: false,
     responsive: [
       {
         breakpoint: 1199,
@@ -22,8 +23,25 @@ $(function() {
     ]
   });
 
+  $('.left').click(function(){
+    $('.slider').slick('slickPrev');
+  })
+
+  $('.right').click(function(){
+    $('.slider').slick('slickNext');
+  })
+
   $('.reviews__slider').slick({
     infinite: true,
-
+    arrows: false,
   });
+
+  $('.previous').click(function(){
+    $('.reviews__slider').slick('slickPrev');
+  })
+
+  $('.next').click(function(){
+    $('.reviews__slider').slick('slickNext');
+  })
 });
+

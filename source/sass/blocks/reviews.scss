@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 0 33px;
+  padding: 0 0 120px;
 
   @media (max-width: $desktop-width) {
     padding: 0 0 100px;
@@ -133,4 +133,20 @@
     padding-left: 6px;
     text-align: center;
   }
+}
+
+.previous {
+  position: absolute;
+  top: 205px;
+  left: 263px;
+
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 205px;
+  right: 263px;
+
+  cursor: pointer;
 }

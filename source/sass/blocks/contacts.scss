@@ -88,12 +88,19 @@
 }
 
 .contacts__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0 0 17px 3px;
 
   @media (max-width: $desktop-width) {
     padding: 0;
     margin-bottom: 20px;
   }
+}
+
+.contacts__item--left {
+  width: 141px;
 }
 
 .contacts__item-title {

@@ -198,6 +198,7 @@
   line-height: 150%;
   font-weight: 400;
   text-align: right;
+  cursor: pointer;
 
   @media (max-width: $desktop-width) {
     bottom: 15px;
@@ -208,6 +209,10 @@
     bottom: 12px;
     left: 0;
   }
+}
+
+.page-header__menu-link {
+  color: #ffffff;
 }
 
 .page-header__buy {

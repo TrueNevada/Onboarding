@@ -32,11 +32,11 @@
   right: 0;
 
   width: 660px;
-  height: 500px;
+  height: 100%;
   background-image: url("../img/splash-desktop.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 660px 500px;
+  background-size: 100% 100%;
 
   @media (max-width: $desktop-width) {
     width: 386px;
@@ -160,6 +160,7 @@
 }
 
 .games__description {
+  width: 345px;
   margin: 0 0 70px;
 
   font-size: 18px;
