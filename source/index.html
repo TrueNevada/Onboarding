@@ -85,6 +85,7 @@
             <p class="gym__description gym__description--bottom">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <picture class="gym__album">
+            <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg">
             <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg">
             <img class="gym__image" src="img/gym-desktop.jpg" width="660" height="401" alt="Тренажерный зал">
           </picture>
@@ -92,6 +93,12 @@
         </div>
 
       </div>
+
+      <picture class="gym__album gym__album--replace">
+        <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg">
+        <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg">
+        <img class="gym__image" src="img/gym-desktop.jpg" width="660" height="401" alt="Тренажерный зал">
+      </picture>
 
     </section>
 
@@ -517,21 +524,21 @@
           <a class="page-footer__link page-footer__link--table link" href="table.html">Расписание</a>
         </nav>
         <ul class="page-footer__social">
-          <li>
+          <li class="page-footer__social-item">
             <a class="page-footer__link link" href="vk.com">
               <svg class="page-footer__link-vk" width="24" height="13" aria-hidden="true" role="img">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="page-footer__social-item">
             <a class="page-footer__link link" href="instagram.com">
               <svg class="page-footer__link-ig" width="24" height="24" aria-hidden="true" role="img">
                 <use xlink:href="#icon-ig"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="page-footer__social-item">
             <a class="page-footer__link link" href="fb.com">
               <svg class="page-footer__link-fb" width="12" height="24" aria-hidden="true" role="img">
                 <use xlink:href="#icon-fb"></use>
@@ -544,11 +551,11 @@
 
   </footer>
 
-  <script src="js/jquery-3.5.0.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/mask.js"></script>
+  <script src="../../js/jquery-3.5.0.min.js"></script>
+  <script src="../../js/slick.min.js"></script>
+  <script src="../../js/jquery.maskedinput.min.js"></script>
+  <script src="../../js/slider.js"></script>
+  <script src="../../js/mask.js"></script>
 
 </body>
 </html>

@@ -141,6 +141,16 @@
   left: 263px;
 
   cursor: pointer;
+
+  @media (max-width: $desktop-width) {
+    top: 187px;
+    left: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 233px;
+    left: 15px;
+  }
 }
 
 .next {
@@ -149,4 +159,14 @@
   right: 263px;
 
   cursor: pointer;
+
+  @media (max-width: $desktop-width) {
+    top: 187px;
+    right: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 233px;
+    right: 15px;
+  }
 }

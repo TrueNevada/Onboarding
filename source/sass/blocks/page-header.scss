@@ -190,7 +190,7 @@
   flex-direction: column;
 
   position: absolute;
-  bottom: 25px;
+  top: 130px;
   left: 20px;
 
   font-family: "RobotoCondensed", Arial, Helvetica, sans-serif;
@@ -201,12 +201,12 @@
   cursor: pointer;
 
   @media (max-width: $desktop-width) {
-    bottom: 15px;
+    top: 93px;
     left: 0;
   }
 
   @media (max-width: $tablet-width) {
-    bottom: 12px;
+    top: 80px;
     left: 0;
   }
 }
@@ -242,7 +242,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 
   height: 78px;
   padding: 0;
@@ -256,6 +255,10 @@
     display: none;
   }
 };
+
+.page-header__social-item {
+  margin-bottom: 20px;
+}
 
 .page-header__social-link {
   color: #ffffff;

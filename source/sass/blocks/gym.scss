@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 68px 0 615px;
+    padding: 68px 0 272px;
   }
 }
 
@@ -53,6 +53,7 @@
 
     font-size: 32px;
     line-height: 32px;
+    text-align: left;
   }
 }
 
@@ -69,7 +70,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 8px;
+    margin: 0 0 23px;
   }
 }
 
@@ -89,6 +90,7 @@
 
   @media (max-width: $tablet-width) {
     width: 258px;
+    margin: 0 0 32px;
     text-align: left;
   }
 }
@@ -103,6 +105,18 @@
 
 .gym__album {
   position: relative;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.gym__album--replace {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .gym__album::after {
@@ -127,11 +141,26 @@
 
     background-image: url("../img/video-tablet.jpg");
   }
+
+  @media (max-width: $tablet-width) {
+    bottom: -203px;
+    left: 0;
+
+    width: 320px;
+    height: 167px;
+
+    background-image: url("../img/video-mobile.jpg");
+  }
 }
 
 .gym__image {
   @media (max-width: $desktop-width) {
     width: 678px;
+    height: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
     height: auto;
   }
 }
