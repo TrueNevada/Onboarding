@@ -106,6 +106,7 @@
   -webkit-appearance: none;
   width: 100%;
   background: transparent;
+  outline: none;
 }
 
 .abonements__slider-input::-webkit-slider-runnable-track {
@@ -148,6 +149,7 @@
   font-size: 20px;
   line-height: 150%;
   color: rgba(16, 38, 84, 0.5);
+  outline: none;
 
   cursor: pointer;
 
@@ -182,6 +184,11 @@
   @media (max-width: $desktop-width) {
     flex-direction: column;
   }
+}
+
+.abonements__variations--second,
+.abonements__variations--third {
+  display: none;
 }
 
 .abonements__item {

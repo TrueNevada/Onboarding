@@ -103,7 +103,7 @@
   }
 }
 
-.gym__album {
+.gym__box {
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -111,7 +111,7 @@
   }
 }
 
-.gym__album--replace {
+.gym__box--replace {
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -119,48 +119,42 @@
   }
 }
 
-.gym__album::after {
-  content: "";
-  position: absolute;
-  bottom: -108px;
-  left: -63px;
-
-  width: 364px;
-  height: 228px;
-  background-image: url("../img/video-desktop.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-  @media (max-width: $desktop-width) {
-    bottom: -78px;
-    left: 207px;
-
-    width: 266px;
-    height: 167px;
-
-    background-image: url("../img/video-tablet.jpg");
-  }
-
-  @media (max-width: $tablet-width) {
-    bottom: -203px;
-    left: 0;
-
-    width: 320px;
-    height: 167px;
-
-    background-image: url("../img/video-mobile.jpg");
-  }
-}
-
 .gym__image {
   @media (max-width: $desktop-width) {
     width: 678px;
-    height: auto;
+    height: 345px;
   }
 
   @media (max-width: $tablet-width) {
     width: 320px;
-    height: auto;
+    height: 313px;
+  }
+}
+
+.gym__link {
+  position: absolute;
+  bottom: -115px;
+  left: -63px;
+
+  @media (max-width: $desktop-width) {
+    bottom: -83px;
+    left: 206px;
+  }
+
+  @media (max-width: $tablet-width) {
+    bottom: -208px;
+    left: 0;
+  }
+}
+
+.gym__play {
+  @media (max-width: $desktop-width) {
+    width: 266px;
+    height: 167px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 320px;
+    height: 167px;
   }
 }

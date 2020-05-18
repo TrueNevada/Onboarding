@@ -75,6 +75,8 @@
 }
 
 .slider__image {
+  object-fit: contain;
+
   @media (max-width: $desktop-width) {
     width: 268px;
     height: 294px;
